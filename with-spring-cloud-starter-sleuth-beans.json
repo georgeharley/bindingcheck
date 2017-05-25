@@ -1,0 +1,3107 @@
+[
+  {
+    "context": "bindingcheck:cloud:0",
+    "parent": "bootstrap:cloud:0",
+    "beans": [
+      {
+        "bean": "bindingcheckApplication",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "io.pivotal.gharley.BindingcheckApplication$$EnhancerBySpringCGLIB$$ee06b87f",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.core.type.classreading.CachingMetadataReaderFactory",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration$$EnhancerBySpringCGLIB$$39164cec",
+        "resource": "null",
+        "dependencies": [
+          "gaugeService",
+          "hystrix.metrics-org.springframework.cloud.netflix.hystrix.HystrixMetricsProperties"
+        ]
+      },
+      {
+        "bean": "hystrix.metrics-org.springframework.cloud.netflix.hystrix.HystrixMetricsProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.HystrixMetricsProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor",
+        "resource": "null",
+        "dependencies": [
+          "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store",
+          "spelConverter"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.context.properties.ConfigurationBeanFactoryMetaData",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration$$EnhancerBySpringCGLIB$$3de3c9e7",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "hystrixStreamEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.HystrixStreamEndpoint",
+        "resource": "class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "hystrixFeature",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.client.actuator.HasFeatures",
+        "resource": "class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$$EnhancerBySpringCGLIB$$52e2de3a",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "hystrixCommandAspect",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect",
+        "resource": "class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "hystrixShutdownHook",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixShutdownHook",
+        "resource": "class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$760f630",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.condition.BeanTypeRegistry",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.condition.BeanTypeRegistry",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "propertySourcesPlaceholderConfigurer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.context.support.PropertySourcesPlaceholderConfigurer",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/PropertyPlaceholderAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$187b754f",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "standardJacksonObjectMapperBuilderCustomizer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration.class]",
+        "dependencies": [
+          "org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28864e92",
+          "spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties"
+        ]
+      },
+      {
+        "bean": "spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.jackson.JacksonProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$5d648f60",
+        "resource": "null",
+        "dependencies": [
+          "org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28864e92",
+          "spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties",
+          "standardJacksonObjectMapperBuilderCustomizer"
+        ]
+      },
+      {
+        "bean": "jacksonObjectMapperBuilder",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.http.converter.json.Jackson2ObjectMapperBuilder",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration.class]",
+        "dependencies": [
+          "standardJacksonObjectMapperBuilderCustomizer"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$ab17cd47",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "jacksonObjectMapper",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "com.fasterxml.jackson.databind.ObjectMapper",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperConfiguration.class]",
+        "dependencies": [
+          "jacksonObjectMapperBuilder"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$8d236ad6",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "jsonComponentModule",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.jackson.JsonComponentModule",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration$$EnhancerBySpringCGLIB$$7e56cddf",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "websocketContainerCustomizer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.websocket.TomcatWebSocketContainerCustomizer",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/websocket/WebSocketAutoConfiguration$TomcatWebSocketConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$$EnhancerBySpringCGLIB$$6234e20e",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat$$EnhancerBySpringCGLIB$$30790d2",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "tomcatEmbeddedServletContainerFactory",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$$EnhancerBySpringCGLIB$$bbf11df6",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "embeddedServletContainerCustomizerBeanPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizerBeanPostProcessor",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "errorPageRegistrarBeanPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.web.servlet.ErrorPageRegistrarBeanPostProcessor",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration$$EnhancerBySpringCGLIB$$f5e9fd08",
+        "resource": "null",
+        "dependencies": [
+          "spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties"
+        ]
+      },
+      {
+        "bean": "dispatcherServlet",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.DispatcherServlet",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/DispatcherServletAutoConfiguration$DispatcherServletConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.WebMvcProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration$$EnhancerBySpringCGLIB$$70d98c2f",
+        "resource": "null",
+        "dependencies": [
+          "serverProperties",
+          "spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties"
+        ]
+      },
+      {
+        "bean": "dispatcherServletRegistration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.web.servlet.ServletRegistrationBean",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration.class]",
+        "dependencies": [
+          "dispatcherServlet"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$$EnhancerBySpringCGLIB$$44f8900a",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration$$EnhancerBySpringCGLIB$$95cbbf24",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "error",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "beanNameViewResolver",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.view.BeanNameViewResolver",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$$EnhancerBySpringCGLIB$$57f57aa",
+        "resource": "null",
+        "dependencies": [
+          "org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28864e92",
+          "serverProperties",
+          "spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties",
+          "conventionErrorViewResolver"
+        ]
+      },
+      {
+        "bean": "errorAttributes",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.DefaultErrorAttributes",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "basicErrorController",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.BasicErrorController",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration.class]",
+        "dependencies": [
+          "errorAttributes"
+        ]
+      },
+      {
+        "bean": "errorPageCustomizer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$ErrorPageCustomizer",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "conventionErrorViewResolver",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.DefaultErrorViewResolver",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "preserveErrorControllerTargetClassPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$PreserveErrorControllerTargetClassPostProcessor",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.ResourceProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$a6b1efbf",
+        "resource": "null",
+        "dependencies": [
+          "org.springframework.beans.factory.support.DefaultListableBeanFactory@5a01ccaa",
+          "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter",
+          "heapdumpMvcEndpoint",
+          "org.springframework.cloud.sleuth.instrument.web.TraceWebMvcConfigurer",
+          "observableMVCConfiguration"
+        ]
+      },
+      {
+        "bean": "requestMappingHandlerAdapter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": [
+          "mvcContentNegotiationManager",
+          "mvcConversionService",
+          "mvcValidator"
+        ]
+      },
+      {
+        "bean": "requestMappingHandlerMapping",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": [
+          "mvcConversionService",
+          "mvcResourceUrlProvider",
+          "mvcContentNegotiationManager"
+        ]
+      },
+      {
+        "bean": "mvcPathMatcher",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.util.AntPathMatcher",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "mvcUrlPathHelper",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.util.UrlPathHelper",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "mvcContentNegotiationManager",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.accept.ContentNegotiationManager",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "viewControllerHandlerMapping",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$EmptyHandlerMapping",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": [
+          "mvcPathMatcher",
+          "mvcUrlPathHelper"
+        ]
+      },
+      {
+        "bean": "beanNameHandlerMapping",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "resourceHandlerMapping",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.handler.SimpleUrlHandlerMapping",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": [
+          "mvcContentNegotiationManager",
+          "mvcPathMatcher",
+          "mvcUrlPathHelper",
+          "mvcResourceUrlProvider"
+        ]
+      },
+      {
+        "bean": "mvcResourceUrlProvider",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.resource.ResourceUrlProvider",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "defaultServletHandlerMapping",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport$EmptyHandlerMapping",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "mvcConversionService",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.format.support.DefaultFormattingConversionService",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "mvcValidator",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "mvcUriComponentsContributor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.method.support.CompositeUriComponentsContributor",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": [
+          "requestMappingHandlerAdapter",
+          "mvcConversionService"
+        ]
+      },
+      {
+        "bean": "httpRequestHandlerAdapter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "simpleControllerHandlerAdapter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "handlerExceptionResolver",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.handler.HandlerExceptionResolverComposite",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": [
+          "mvcContentNegotiationManager"
+        ]
+      },
+      {
+        "bean": "mvcViewResolver",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.view.ViewResolverComposite",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]",
+        "dependencies": [
+          "mvcContentNegotiationManager"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration$$EnhancerBySpringCGLIB$$87a179aa",
+        "resource": "null",
+        "dependencies": [
+          "spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties"
+        ]
+      },
+      {
+        "bean": "faviconHandlerMapping",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.handler.SimpleUrlHandlerMapping",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration.class]",
+        "dependencies": [
+          "faviconRequestHandler"
+        ]
+      },
+      {
+        "bean": "faviconRequestHandler",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.resource.ResourceHttpRequestHandler",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$$EnhancerBySpringCGLIB$$3a87a532",
+        "resource": "null",
+        "dependencies": [
+          "spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties",
+          "spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties",
+          "org.springframework.beans.factory.support.DefaultListableBeanFactory@5a01ccaa",
+          "messageConverters"
+        ]
+      },
+      {
+        "bean": "defaultViewResolver",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.view.InternalResourceViewResolver",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "viewResolver",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.servlet.view.ContentNegotiatingViewResolver",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]",
+        "dependencies": [
+          "org.springframework.beans.factory.support.DefaultListableBeanFactory@5a01ccaa"
+        ]
+      },
+      {
+        "bean": "welcomePageHandlerMapping",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]",
+        "dependencies": [
+          "spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties"
+        ]
+      },
+      {
+        "bean": "requestContextFilter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.web.filter.OrderedRequestContextFilter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$bec136f6",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "hiddenHttpMethodFilter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.web.filter.OrderedHiddenHttpMethodFilter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "httpPutFormContentFilter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.cloud.CloudAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.cloud.CloudAutoConfiguration$$EnhancerBySpringCGLIB$$a23faf52",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "rabbit",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.amqp.rabbit.connection.CachingConnectionFactory",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.cloud.appplicationInstanceInfo",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.app.ApplicationInstanceInfo",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.commons.util.UtilAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$1732173a",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "inetUtilsProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.commons.util.InetUtilsProperties",
+        "resource": "class path resource [org/springframework/cloud/commons/util/UtilAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "inetUtils",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.commons.util.InetUtils",
+        "resource": "class path resource [org/springframework/cloud/commons/util/UtilAutoConfiguration.class]",
+        "dependencies": [
+          "inetUtilsProperties"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "auditEventRepository",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.audit.InMemoryAuditEventRepository",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/AuditAutoConfiguration$AuditEventRepositoryConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.AuditAutoConfiguration$$EnhancerBySpringCGLIB$$f2cf4392",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "auditListener",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.audit.listener.AuditListener",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/AuditAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$8b7e5acf",
+        "resource": "null",
+        "dependencies": [
+          "spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties"
+        ]
+      },
+      {
+        "bean": "spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.info.ProjectInfoProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.InfoContributorAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.InfoContributorAutoConfiguration$$EnhancerBySpringCGLIB$$f8eb1860",
+        "resource": "null",
+        "dependencies": [
+          "management.info-org.springframework.boot.actuate.autoconfigure.InfoContributorProperties"
+        ]
+      },
+      {
+        "bean": "envInfoContributor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.info.EnvironmentInfoContributor",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/InfoContributorAutoConfiguration.class]",
+        "dependencies": [
+          "environment"
+        ]
+      },
+      {
+        "bean": "management.info-org.springframework.boot.actuate.autoconfigure.InfoContributorProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.InfoContributorProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DiskSpaceHealthIndicatorConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$DiskSpaceHealthIndicatorConfiguration$$EnhancerBySpringCGLIB$$f4adb942",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "diskSpaceHealthIndicator",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.health.DiskSpaceHealthIndicator",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/HealthIndicatorAutoConfiguration$DiskSpaceHealthIndicatorConfiguration.class]",
+        "dependencies": [
+          "diskSpaceHealthIndicatorProperties"
+        ]
+      },
+      {
+        "bean": "diskSpaceHealthIndicatorProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.health.DiskSpaceHealthIndicatorProperties",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/HealthIndicatorAutoConfiguration$DiskSpaceHealthIndicatorConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$e42729a",
+        "resource": "null",
+        "dependencies": [
+          "management.health.status-org.springframework.boot.actuate.autoconfigure.HealthIndicatorProperties"
+        ]
+      },
+      {
+        "bean": "healthAggregator",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.health.OrderedHealthAggregator",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/HealthIndicatorAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "management.health.status-org.springframework.boot.actuate.autoconfigure.HealthIndicatorProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.HealthIndicatorProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration$$EnhancerBySpringCGLIB$$36e7b205",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "counterBuffers",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.metrics.buffer.CounterBuffers",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "gaugeBuffers",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.metrics.buffer.GaugeBuffers",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "actuatorMetricReader",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.metrics.buffer.BufferMetricReader",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration.class]",
+        "dependencies": [
+          "counterBuffers",
+          "gaugeBuffers"
+        ]
+      },
+      {
+        "bean": "counterService",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.metrics.buffer.BufferCounterService",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration.class]",
+        "dependencies": [
+          "counterBuffers"
+        ]
+      },
+      {
+        "bean": "gaugeService",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.metrics.buffer.BufferGaugeService",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/MetricRepositoryAutoConfiguration$FastMetricServicesConfiguration.class]",
+        "dependencies": [
+          "gaugeBuffers"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.MetricRepositoryAutoConfiguration$$EnhancerBySpringCGLIB$$5f825e5d",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$ceefbcd2",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "mbeanExporter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.jmx.export.annotation.AnnotationMBeanExporter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/jmx/JmxAutoConfiguration.class]",
+        "dependencies": [
+          "objectNamingStrategy"
+        ]
+      },
+      {
+        "bean": "objectNamingStrategy",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.jmx.ParentAwareNamingStrategy",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/jmx/JmxAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "mbeanServer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "com.sun.jmx.mbeanserver.JmxMBeanServer",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/jmx/JmxAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$96081405",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "integrationMbeanExporter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.monitor.IntegrationMBeanExporter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/integration/IntegrationAutoConfiguration$IntegrationJmxConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationConfiguration$$EnhancerBySpringCGLIB$$4fff4f08",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "channelInitializer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.config.ChannelInitializer",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.integration.expression.IntegrationEvaluationContextAwareBeanPostProcessor#0",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.expression.IntegrationEvaluationContextAwareBeanPostProcessor",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "integrationGlobalProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "java.util.Properties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "integrationHeaderChannelRegistry",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.channel.DefaultHeaderChannelRegistry",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "toStringFriendlyJsonNodeToStringConverter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.json.ToStringFriendlyJsonNodeToStringConverter",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "converterRegistrar",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.context.ConverterRegistrar",
+        "resource": "null",
+        "dependencies": [
+          "toStringFriendlyJsonNodeToStringConverter",
+          "spelConverter"
+        ]
+      },
+      {
+        "bean": "integrationConversionService",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.core.convert.support.GenericConversionService",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "DefaultConfiguringBeanFactoryPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.config.DefaultConfiguringBeanFactoryPostProcessor",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "datatypeChannelMessageConverter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.support.converter.DefaultDatatypeChannelMessageConverter",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "messageBuilderFactory",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.support.DefaultMessageBuilderFactory",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "integrationLifecycleRoleController",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.support.SmartLifecycleRoleController",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$$EnhancerBySpringCGLIB$$77d507d4",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$IntegrationMetricsConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$IntegrationMetricsConfiguration$$EnhancerBySpringCGLIB$$9e2084d6",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "springIntegrationPublicMetrics",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.MetricReaderPublicMetrics",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/PublicMetricsAutoConfiguration$IntegrationMetricsConfiguration.class]",
+        "dependencies": [
+          "integrationMbeanExporter"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$TomcatMetricsConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$TomcatMetricsConfiguration$$EnhancerBySpringCGLIB$$6d7847de",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "tomcatPublicMetrics",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.TomcatPublicMetrics",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/PublicMetricsAutoConfiguration$TomcatMetricsConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.PublicMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$117fb353",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "systemPublicMetrics",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.SystemPublicMetrics",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/PublicMetricsAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "metricReaderPublicMetrics",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.MetricReaderPublicMetrics",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/PublicMetricsAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$RequestMappingEndpointConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$RequestMappingEndpointConfiguration$$EnhancerBySpringCGLIB$$18c822c0",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "requestMappingEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.RequestMappingEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration$RequestMappingEndpointConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration$$EnhancerBySpringCGLIB$$5d8d87e2",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "environmentEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.EnvironmentEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "healthEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.HealthEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "beansEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.BeansEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "infoEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.InfoEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "metricsEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.MetricsEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "traceEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.TraceEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "dumpEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.DumpEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "autoConfigurationReportEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.AutoConfigurationReportEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": [
+          "autoConfigurationReport"
+        ]
+      },
+      {
+        "bean": "shutdownEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.ShutdownEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "configurationPropertiesReportEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.ConfigurationPropertiesReportEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "endpoints-org.springframework.boot.actuate.endpoint.EndpointProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.EndpointProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportAutoConfiguration$$EnhancerBySpringCGLIB$$392e8031",
+        "resource": "null",
+        "dependencies": [
+          "endpoints.jmx-org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportProperties"
+        ]
+      },
+      {
+        "bean": "endpointMBeanExporter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointMBeanExportAutoConfiguration.class]",
+        "dependencies": [
+          "mbeanServer"
+        ]
+      },
+      {
+        "bean": "endpoints.jmx-org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointMBeanExportProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration$$EnhancerBySpringCGLIB$$5d9c986",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "serverProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.ServerProperties",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/ServerPropertiesAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "duplicateServerPropertiesDetector",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration$DuplicateServerPropertiesDetector",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/ServerPropertiesAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.ManagementServerPropertiesAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.ManagementServerPropertiesAutoConfiguration$$EnhancerBySpringCGLIB$$383e9efe",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "managementServerProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.ManagementServerProperties",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/ManagementServerPropertiesAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$9cb276b6",
+        "resource": "null",
+        "dependencies": [
+          "spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties"
+        ]
+      },
+      {
+        "bean": "stringHttpMessageConverter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.http.converter.StringHttpMessageConverter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.HttpEncodingProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$2ac0a0b6",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "mappingJackson2HttpMessageConverter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.http.converter.json.MappingJackson2HttpMessageConverter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration.class]",
+        "dependencies": [
+          "jacksonObjectMapper"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$$EnhancerBySpringCGLIB$$bdae392c",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$e03c6c16",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "messageConverters",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.HttpMessageConverters",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/HttpMessageConvertersAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.EndpointWebMvcManagementContextConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointWebMvcManagementContextConfiguration$$EnhancerBySpringCGLIB$$2d585fab",
+        "resource": "null",
+        "dependencies": [
+          "endpoints.health-org.springframework.boot.actuate.autoconfigure.HealthMvcEndpointProperties",
+          "managementServerProperties",
+          "endpoints.cors-org.springframework.boot.actuate.autoconfigure.EndpointCorsProperties"
+        ]
+      },
+      {
+        "bean": "endpointHandlerMapping",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcManagementContextConfiguration.class]",
+        "dependencies": [
+          "mvcEndpoints"
+        ]
+      },
+      {
+        "bean": "mvcEndpoints",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.mvc.MvcEndpoints",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcManagementContextConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "environmentMvcEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcManagementContextConfiguration.class]",
+        "dependencies": [
+          "environmentEndpoint"
+        ]
+      },
+      {
+        "bean": "heapdumpMvcEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcManagementContextConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "healthMvcEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcManagementContextConfiguration.class]",
+        "dependencies": [
+          "healthEndpoint",
+          "managementServerProperties"
+        ]
+      },
+      {
+        "bean": "metricsMvcEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcManagementContextConfiguration.class]",
+        "dependencies": [
+          "metricsEndpoint"
+        ]
+      },
+      {
+        "bean": "endpoints.health-org.springframework.boot.actuate.autoconfigure.HealthMvcEndpointProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.HealthMvcEndpointProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "endpoints.cors-org.springframework.boot.actuate.autoconfigure.EndpointCorsProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointCorsProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$EndpointWebMvcConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$EndpointWebMvcConfiguration$$EnhancerBySpringCGLIB$$37883e53",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextFilterConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextFilterConfiguration$$EnhancerBySpringCGLIB$$a4121b57",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "applicationContextIdFilter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.web.filter.ApplicationContextHeaderFilter",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration$ApplicationContextFilterConfiguration.class]",
+        "dependencies": [
+          "org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28864e92"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$22619dc",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "managementContextResolver",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.ManagementContextResolver",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "managementServletContext",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$1",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]",
+        "dependencies": [
+          "managementServerProperties"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$MetricExportPropertiesConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$MetricExportPropertiesConfiguration$$EnhancerBySpringCGLIB$$3f7e706e",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.metrics.export-org.springframework.boot.actuate.metrics.export.MetricExportProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.metrics.export.MetricExportProperties",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/MetricExportAutoConfiguration$MetricExportPropertiesConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$StatsdConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$StatsdConfiguration$$EnhancerBySpringCGLIB$$952e21a0",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.MetricExportAutoConfiguration$$EnhancerBySpringCGLIB$$976d8e73",
+        "resource": "null",
+        "dependencies": [
+          "spring.metrics.export-org.springframework.boot.actuate.metrics.export.MetricExportProperties"
+        ]
+      },
+      {
+        "bean": "metricWritersMetricExporter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.metrics.export.MetricExporters",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/MetricExportAutoConfiguration.class]",
+        "dependencies": [
+          "spring.metrics.export-org.springframework.boot.actuate.metrics.export.MetricExportProperties"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration$$EnhancerBySpringCGLIB$$6bd4a2af",
+        "resource": "null",
+        "dependencies": [
+          "counterService",
+          "gaugeService",
+          "endpoints.metrics.filter-org.springframework.boot.actuate.autoconfigure.MetricFilterProperties"
+        ]
+      },
+      {
+        "bean": "metricsFilter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.MetricsFilter",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/MetricFilterAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "endpoints.metrics.filter-org.springframework.boot.actuate.autoconfigure.MetricFilterProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.MetricFilterProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.TraceRepositoryAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.TraceRepositoryAutoConfiguration$$EnhancerBySpringCGLIB$$a4d1333e",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "traceRepository",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.trace.InMemoryTraceRepository",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/TraceRepositoryAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.actuate.autoconfigure.TraceWebFilterAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.autoconfigure.TraceWebFilterAutoConfiguration$$EnhancerBySpringCGLIB$$47ec7790",
+        "resource": "null",
+        "dependencies": [
+          "traceRepository",
+          "management.trace-org.springframework.boot.actuate.trace.TraceProperties"
+        ]
+      },
+      {
+        "bean": "webRequestLoggingFilter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.trace.WebRequestTraceFilter",
+        "resource": "class path resource [org/springframework/boot/actuate/autoconfigure/TraceWebFilterAutoConfiguration.class]",
+        "dependencies": [
+          "org.springframework.beans.factory.support.DefaultListableBeanFactory@5a01ccaa"
+        ]
+      },
+      {
+        "bean": "management.trace-org.springframework.boot.actuate.trace.TraceProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.actuate.trace.TraceProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$CglibAutoProxyConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$CglibAutoProxyConfiguration$$EnhancerBySpringCGLIB$$8ba0ccec",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.aop.AopAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$$EnhancerBySpringCGLIB$$9adacc78",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration$$EnhancerBySpringCGLIB$$3f0dd904",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "persistenceExceptionTranslationPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/dao/PersistenceExceptionTranslationAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration$$EnhancerBySpringCGLIB$$2670b461",
+        "resource": "null",
+        "dependencies": [
+          "spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties"
+        ]
+      },
+      {
+        "bean": "characterEncodingFilter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.web.filter.OrderedCharacterEncodingFilter",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/HttpEncodingAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "localeCharsetMappingsCustomizer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration$LocaleCharsetMappingsCustomizer",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/HttpEncodingAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration$$EnhancerBySpringCGLIB$$a3200fc",
+        "resource": "null",
+        "dependencies": [
+          "spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties"
+        ]
+      },
+      {
+        "bean": "multipartConfigElement",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "javax.servlet.MultipartConfigElement",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/MultipartAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "multipartResolver",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.web.multipart.support.StandardServletMultipartResolver",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/MultipartAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.MultipartProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration$$EnhancerBySpringCGLIB$$56b3c4cd",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "restTemplateBuilder",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.web.client.RestTemplateBuilder",
+        "resource": "class path resource [org/springframework/boot/autoconfigure/web/WebClientAutoConfiguration$RestTemplateConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$$EnhancerBySpringCGLIB$$60237269",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6b9e50b3",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "configurationPropertiesBeans",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.properties.ConfigurationPropertiesBeans",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/ConfigurationPropertiesRebinderAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "configurationPropertiesRebinder",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/ConfigurationPropertiesRebinderAutoConfiguration.class]",
+        "dependencies": [
+          "configurationPropertiesBeans",
+          "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$RefreshEndpointConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$RefreshEndpointConfiguration$$EnhancerBySpringCGLIB$$d7cfe517",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "refreshEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.endpoint.RefreshEndpoint",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshEndpointAutoConfiguration$RefreshEndpointConfiguration.class]",
+        "dependencies": [
+          "contextRefresher"
+        ]
+      },
+      {
+        "bean": "refreshEventListener",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.endpoint.event.RefreshEventListener",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshEndpointAutoConfiguration$RefreshEndpointConfiguration.class]",
+        "dependencies": [
+          "refreshEndpoint"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$RestartEndpointWithIntegration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$RestartEndpointWithIntegration",
+        "resource": "null",
+        "dependencies": [
+          "integrationMbeanExporter"
+        ]
+      },
+      {
+        "bean": "restartEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.restart.RestartEndpoint",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshEndpointAutoConfiguration$RestartEndpointWithIntegration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$14fd52a9",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "refreshScopeHealthIndicator",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.health.RefreshScopeHealthIndicator",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshEndpointAutoConfiguration.class]",
+        "dependencies": [
+          "refreshScope",
+          "configurationPropertiesRebinder"
+        ]
+      },
+      {
+        "bean": "pauseEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.restart.RestartEndpoint$PauseEndpoint",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshEndpointAutoConfiguration.class]",
+        "dependencies": [
+          "restartEndpoint"
+        ]
+      },
+      {
+        "bean": "resumeEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.restart.RestartEndpoint$ResumeEndpoint",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshEndpointAutoConfiguration.class]",
+        "dependencies": [
+          "restartEndpoint"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration$$EnhancerBySpringCGLIB$$24bc26",
+        "resource": "null",
+        "dependencies": [
+          "restartEndpoint"
+        ]
+      },
+      {
+        "bean": "environmentManagerEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration.class]",
+        "dependencies": [
+          "environmentEndpoint",
+          "environmentManager"
+        ]
+      },
+      {
+        "bean": "refreshMvcEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.endpoint.GenericPostableMvcEndpoint",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration.class]",
+        "dependencies": [
+          "refreshEndpoint"
+        ]
+      },
+      {
+        "bean": "restartMvcEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.restart.RestartMvcEndpoint",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "pauseMvcEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.endpoint.GenericPostableMvcEndpoint",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration.class]",
+        "dependencies": [
+          "pauseEndpoint"
+        ]
+      },
+      {
+        "bean": "resumeMvcEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.endpoint.GenericPostableMvcEndpoint",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/LifecycleMvcEndpointAutoConfiguration.class]",
+        "dependencies": [
+          "resumeEndpoint"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.autoconfigure.RefreshAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$$EnhancerBySpringCGLIB$$cab115e",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "refreshScope",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.scope.refresh.RefreshScope",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "loggingRebinder",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.logging.LoggingRebinder",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "environmentManager",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.environment.EnvironmentManager",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshAutoConfiguration.class]",
+        "dependencies": [
+          "environment"
+        ]
+      },
+      {
+        "bean": "contextRefresher",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.refresh.ContextRefresher",
+        "resource": "class path resource [org/springframework/cloud/autoconfigure/RefreshAutoConfiguration.class]",
+        "dependencies": [
+          "org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28864e92",
+          "refreshScope"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.client.discovery.noop.NoopDiscoveryClientAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.client.discovery.noop.NoopDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$7d7c5094",
+        "resource": "null",
+        "dependencies": [
+          "serverProperties",
+          "environment"
+        ]
+      },
+      {
+        "bean": "discoveryClient",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.client.discovery.noop.NoopDiscoveryClient",
+        "resource": "class path resource [org/springframework/cloud/client/discovery/noop/NoopDiscoveryClientAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration$PropagateEventsConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration$PropagateEventsConfiguration$$EnhancerBySpringCGLIB$$af0e333e",
+        "resource": "null",
+        "dependencies": [
+          "environment"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration$ArchaiusEndpointConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration$ArchaiusEndpointConfiguration$$EnhancerBySpringCGLIB$$89fb2a11",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "archaiusEndpoint",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.archaius.ArchaiusEndpoint",
+        "resource": "class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration$ArchaiusEndpointConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration$$EnhancerBySpringCGLIB$$4b268ed0",
+        "resource": "null",
+        "dependencies": [
+          "environment",
+          "configurableEnvironmentConfiguration"
+        ]
+      },
+      {
+        "bean": "configurableEnvironmentConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration",
+        "resource": "class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.autoconfig.TraceAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.autoconfig.TraceAutoConfiguration$$EnhancerBySpringCGLIB$$88816ac9",
+        "resource": "null",
+        "dependencies": [
+          "spring.sleuth-org.springframework.cloud.sleuth.autoconfig.SleuthProperties"
+        ]
+      },
+      {
+        "bean": "randomForSpanIds",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "java.util.Random",
+        "resource": "class path resource [org/springframework/cloud/sleuth/autoconfig/TraceAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "defaultTraceSampler",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.sampler.NeverSampler",
+        "resource": "class path resource [org/springframework/cloud/sleuth/autoconfig/TraceAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "sleuthTracer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.trace.DefaultTracer",
+        "resource": "class path resource [org/springframework/cloud/sleuth/autoconfig/TraceAutoConfiguration.class]",
+        "dependencies": [
+          "defaultTraceSampler",
+          "randomForSpanIds",
+          "spanNamer",
+          "slf4jSpanLogger",
+          "defaultSpanReporter"
+        ]
+      },
+      {
+        "bean": "spanNamer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.DefaultSpanNamer",
+        "resource": "class path resource [org/springframework/cloud/sleuth/autoconfig/TraceAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "defaultSpanReporter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.NoOpSpanReporter",
+        "resource": "class path resource [org/springframework/cloud/sleuth/autoconfig/TraceAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.TraceKeys",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.sleuth-org.springframework.cloud.sleuth.autoconfig.SleuthProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.autoconfig.SleuthProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.hystrix.SleuthHystrixAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.hystrix.SleuthHystrixAutoConfiguration$$EnhancerBySpringCGLIB$$9ab46465",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "sleuthHystrixConcurrencyStrategy",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.hystrix.SleuthHystrixConcurrencyStrategy",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/hystrix/SleuthHystrixAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.web.TraceHttpAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.TraceHttpAutoConfiguration$$EnhancerBySpringCGLIB$$36025705",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "httpTraceKeysInjector",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.HttpTraceKeysInjector",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/TraceHttpAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration$SkipPatternProviderConfig",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration$SkipPatternProviderConfig$$EnhancerBySpringCGLIB$$cf968ac3",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "skipPatternForManagementServerProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration$SkipPatternProviderConfig$1",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/TraceWebAutoConfiguration$SkipPatternProviderConfig.class]",
+        "dependencies": [
+          "managementServerProperties",
+          "spring.sleuth.web-org.springframework.cloud.sleuth.instrument.web.SleuthWebProperties"
+        ]
+      },
+      {
+        "bean": "spring.sleuth.web-org.springframework.cloud.sleuth.instrument.web.SleuthWebProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.SleuthWebProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.web.TraceWebMvcConfigurer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.TraceWebMvcConfigurer$$EnhancerBySpringCGLIB$$91539422",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "traceHandlerInterceptor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.TraceHandlerInterceptor",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/TraceWebMvcConfigurer.class]",
+        "dependencies": [
+          "org.springframework.beans.factory.support.DefaultListableBeanFactory@5a01ccaa"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration$TraceWebMvcAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration$TraceWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$9894c633",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.TraceWebAutoConfiguration$$EnhancerBySpringCGLIB$$4cc9cc83",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "traceWebAspect",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.TraceWebAspect",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/TraceWebAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "spanNamer"
+        ]
+      },
+      {
+        "bean": "traceWebFilter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.web.servlet.FilterRegistrationBean",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/TraceWebAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys",
+          "skipPatternForManagementServerProperties",
+          "defaultSpanReporter",
+          "httpServletRequestSpanExtractor",
+          "httpTraceKeysInjector",
+          "traceFilter"
+        ]
+      },
+      {
+        "bean": "traceFilter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.TraceFilter",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/TraceWebAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys",
+          "skipPatternForManagementServerProperties",
+          "defaultSpanReporter",
+          "httpServletRequestSpanExtractor",
+          "httpTraceKeysInjector"
+        ]
+      },
+      {
+        "bean": "httpServletRequestSpanExtractor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.HttpServletRequestExtractor",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/TraceWebAutoConfiguration.class]",
+        "dependencies": [
+          "skipPatternForManagementServerProperties"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.hystrix.HystrixAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.HystrixAutoConfiguration$$EnhancerBySpringCGLIB$$fef2af4e",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "hystrixHealthIndicator",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.HystrixHealthIndicator",
+        "resource": "class path resource [org/springframework/cloud/netflix/hystrix/HystrixAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration$$EnhancerBySpringCGLIB$$114bebbb",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "binderAwareRouterBeanPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.BinderAwareRouterBeanPostProcessor",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration$PostProcessorConfiguration.class]",
+        "dependencies": [
+          "org.springframework.beans.factory.support.DefaultListableBeanFactory@5a01ccaa"
+        ]
+      },
+      {
+        "bean": "propertyAccessorBeanPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration$2",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration$PostProcessorConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.stream.config.BindingServiceConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.BindingServiceConfiguration$$EnhancerBySpringCGLIB$$7585e003",
+        "resource": "null",
+        "dependencies": [
+          "jacksonObjectMapper",
+          "datatypeChannelMessageConverter"
+        ]
+      },
+      {
+        "bean": "bindingService",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.BindingService",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "spring.cloud.stream-org.springframework.cloud.stream.config.BindingServiceProperties",
+          "binderFactory"
+        ]
+      },
+      {
+        "bean": "messageConverterConfigurer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.MessageConverterConfigurer",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "spring.cloud.stream-org.springframework.cloud.stream.config.BindingServiceProperties",
+          "compositeMessageConverterFactory"
+        ]
+      },
+      {
+        "bean": "channelFactory",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.SubscribableChannelBindingTargetFactory",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "compositeMessageChannelConfigurer"
+        ]
+      },
+      {
+        "bean": "compositeMessageChannelConfigurer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.CompositeMessageChannelConfigurer",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "messageConverterConfigurer"
+        ]
+      },
+      {
+        "bean": "outputBindingLifecycle",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.OutputBindingLifecycle",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "bindingService"
+        ]
+      },
+      {
+        "bean": "inputBindingLifecycle",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.InputBindingLifecycle",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "bindingService"
+        ]
+      },
+      {
+        "bean": "contextStartAfterRefreshListener",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.ContextStartAfterRefreshListener",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "bindingService"
+        ]
+      },
+      {
+        "bean": "binderAwareChannelResolver",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.BinderAwareChannelResolver",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "bindingService",
+          "channelFactory",
+          "dynamicDestinationsBindable"
+        ]
+      },
+      {
+        "bean": "dynamicDestinationsBindable",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.DynamicDestinationsBindable",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "compositeMessageConverterFactory",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.converter.CompositeMessageConverterFactory",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "messageHandlerMethodFactory",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactory",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "compositeMessageConverterFactory"
+        ]
+      },
+      {
+        "bean": "bindToAnnotationBeanPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binding.StreamListenerAnnotationBeanPostProcessor",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "channelBindingServiceProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.ChannelBindingServiceProperties",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BindingServiceConfiguration.class]",
+        "dependencies": [
+          "spring.cloud.stream-org.springframework.cloud.stream.config.BindingServiceProperties"
+        ]
+      },
+      {
+        "bean": "spring.cloud.stream-org.springframework.cloud.stream.config.BindingServiceProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.BindingServiceProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.stream.config.BinderFactoryConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.BinderFactoryConfiguration$$EnhancerBySpringCGLIB$$456a14af",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "binderFactory",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binder.DefaultBinderFactory",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BinderFactoryConfiguration.class]",
+        "dependencies": [
+          "binderTypeRegistry",
+          "spring.cloud.stream-org.springframework.cloud.stream.config.BindingServiceProperties"
+        ]
+      },
+      {
+        "bean": "binderTypeRegistry",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.binder.DefaultBinderTypeRegistry",
+        "resource": "class path resource [org/springframework/cloud/stream/config/BinderFactoryConfiguration.class]",
+        "dependencies": [
+          "org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28864e92"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$$EnhancerBySpringCGLIB$$4fc0a5ab",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "spelConverter",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter",
+        "resource": "class path resource [org/springframework/cloud/stream/config/SpelExpressionConverterConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.hystrix.stream.HystrixStreamAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.stream.HystrixStreamAutoConfiguration$$EnhancerBySpringCGLIB$$2d7bb5c6",
+        "resource": "null",
+        "dependencies": [
+          "channelBindingServiceProperties",
+          "hystrixStreamProperties",
+          "hystrixStreamOutput"
+        ]
+      },
+      {
+        "bean": "hystrixStreamQueueFeature",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.client.actuator.HasFeatures",
+        "resource": "class path resource [org/springframework/cloud/netflix/hystrix/stream/HystrixStreamAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "hystrixStreamProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.stream.HystrixStreamProperties",
+        "resource": "class path resource [org/springframework/cloud/netflix/hystrix/stream/HystrixStreamAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "hystrixStreamTask",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.stream.HystrixStreamTask$$EnhancerBySpringCGLIB$$f355ffb6",
+        "resource": "class path resource [org/springframework/cloud/netflix/hystrix/stream/HystrixStreamAutoConfiguration.class]",
+        "dependencies": [
+          "discoveryClient"
+        ]
+      },
+      {
+        "bean": "hystrixStreamOutput",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.channel.DirectChannel",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.hystrix.stream.HystrixStreamClient",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.hystrix.stream.HystrixStreamClient",
+        "resource": "null",
+        "dependencies": [
+          "channelFactory"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.rx.RxJavaAutoConfiguration$RxJavaReturnValueHandlerConfig",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.rx.RxJavaAutoConfiguration$RxJavaReturnValueHandlerConfig$$EnhancerBySpringCGLIB$$ad4cb0df",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "singleReturnValueHandler",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.rx.SingleReturnValueHandler",
+        "resource": "class path resource [org/springframework/cloud/netflix/rx/RxJavaAutoConfiguration$RxJavaReturnValueHandlerConfig.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "observableMVCConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.rx.RxJavaAutoConfiguration$RxJavaReturnValueHandlerConfig$1",
+        "resource": "class path resource [org/springframework/cloud/netflix/rx/RxJavaAutoConfiguration$RxJavaReturnValueHandlerConfig.class]",
+        "dependencies": [
+          "singleReturnValueHandler"
+        ]
+      },
+      {
+        "bean": "rxFeature",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.client.actuator.HasFeatures",
+        "resource": "class path resource [org/springframework/cloud/netflix/rx/RxJavaAutoConfiguration$RxJavaReturnValueHandlerConfig.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.netflix.rx.RxJavaAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.netflix.rx.RxJavaAutoConfiguration$$EnhancerBySpringCGLIB$$1e2aa44e",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.scheduling.TraceSchedulingAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.scheduling.TraceSchedulingAutoConfiguration$$EnhancerBySpringCGLIB$$58aaa20d",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "traceSchedulingAspect",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.scheduling.TraceSchedulingAspect",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/scheduling/TraceSchedulingAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys",
+          "spring.sleuth.scheduled-org.springframework.cloud.sleuth.instrument.scheduling.SleuthSchedulingProperties"
+        ]
+      },
+      {
+        "bean": "spring.sleuth.scheduled-org.springframework.cloud.sleuth.instrument.scheduling.SleuthSchedulingProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.scheduling.SleuthSchedulingProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$8cc5eb79",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$3767f9d5",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "traceAsyncAspect",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.async.TraceAsyncAspect",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/async/AsyncDefaultAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.messaging.TraceSpanMessagingAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.messaging.TraceSpanMessagingAutoConfiguration$$EnhancerBySpringCGLIB$$ef56aaed",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "messagingSpanExtractor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.messaging.MessagingSpanExtractor",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/messaging/TraceSpanMessagingAutoConfiguration.class]",
+        "dependencies": [
+          "randomForSpanIds"
+        ]
+      },
+      {
+        "bean": "messagingSpanInjector",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.messaging.MessagingSpanInjector",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/messaging/TraceSpanMessagingAutoConfiguration.class]",
+        "dependencies": [
+          "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.messaging.TraceSpringIntegrationAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.messaging.TraceSpringIntegrationAutoConfiguration$$EnhancerBySpringCGLIB$$37a688c0",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "traceChannelInterceptor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.messaging.IntegrationTraceChannelInterceptor",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/messaging/TraceSpringIntegrationAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys",
+          "randomForSpanIds",
+          "messagingSpanExtractor",
+          "messagingSpanInjector"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.rxjava.RxJavaAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.rxjava.RxJavaAutoConfiguration$$EnhancerBySpringCGLIB$$3f3df04a",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "sleuthRxJavaSchedulersHook",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.rxjava.SleuthRxJavaSchedulersHook",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/rxjava/RxJavaAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "spring.sleuth.keys-org.springframework.cloud.sleuth.TraceKeys",
+          "spring.sleuth.rxjava.schedulers-org.springframework.cloud.sleuth.instrument.rxjava.SleuthRxJavaSchedulersProperties"
+        ]
+      },
+      {
+        "bean": "spring.sleuth.rxjava.schedulers-org.springframework.cloud.sleuth.instrument.rxjava.SleuthRxJavaSchedulersProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.rxjava.SleuthRxJavaSchedulersProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.web.client.TraceWebAsyncClientAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.client.TraceWebAsyncClientAutoConfiguration$$EnhancerBySpringCGLIB$$34da3b1d",
+        "resource": "null",
+        "dependencies": [
+          "sleuthTracer",
+          "httpTraceKeysInjector",
+          "httpRequestSpanInjector"
+        ]
+      },
+      {
+        "bean": "traceAsyncRestTemplate",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.client.TraceAsyncRestTemplate",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/client/TraceWebAsyncClientAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceInterceptorConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$TraceInterceptorConfiguration$$EnhancerBySpringCGLIB$$f9f45f67",
+        "resource": "null",
+        "dependencies": [
+          "traceRestTemplateInterceptor"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$$EnhancerBySpringCGLIB$$fc171935",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "traceRestTemplateInterceptor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.client.TraceRestTemplateInterceptor",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/client/TraceWebClientAutoConfiguration.class]",
+        "dependencies": [
+          "sleuthTracer",
+          "httpRequestSpanInjector",
+          "httpTraceKeysInjector"
+        ]
+      },
+      {
+        "bean": "httpRequestSpanInjector",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.instrument.web.client.HttpRequestInjector",
+        "resource": "class path resource [org/springframework/cloud/sleuth/instrument/web/client/TraceWebClientAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.log.SleuthLogAutoConfiguration$Slf4jConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.log.SleuthLogAutoConfiguration$Slf4jConfiguration$$EnhancerBySpringCGLIB$$d5ec7497",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "slf4jSpanLogger",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.log.Slf4jSpanLogger",
+        "resource": "class path resource [org/springframework/cloud/sleuth/log/SleuthLogAutoConfiguration$Slf4jConfiguration.class]",
+        "dependencies": [
+          "spring.sleuth.log.slf4j-org.springframework.cloud.sleuth.log.SleuthSlf4jProperties"
+        ]
+      },
+      {
+        "bean": "spring.sleuth.log.slf4j-org.springframework.cloud.sleuth.log.SleuthSlf4jProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.log.SleuthSlf4jProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.log.SleuthLogAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.log.SleuthLogAutoConfiguration$$EnhancerBySpringCGLIB$$a1806df6",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.metric.TraceMetricsAutoConfiguration$CounterServiceSpanReporterConfig",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.metric.TraceMetricsAutoConfiguration$CounterServiceSpanReporterConfig$$EnhancerBySpringCGLIB$$1b02609",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "spanReporterCounterService",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.metric.CounterServiceBasedSpanMetricReporter",
+        "resource": "class path resource [org/springframework/cloud/sleuth/metric/TraceMetricsAutoConfiguration$CounterServiceSpanReporterConfig.class]",
+        "dependencies": [
+          "counterService",
+          "sleuthMetricProperties"
+        ]
+      },
+      {
+        "bean": "org.springframework.cloud.sleuth.metric.TraceMetricsAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.metric.TraceMetricsAutoConfiguration$$EnhancerBySpringCGLIB$$760e5997",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "sleuthMetricProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.sleuth.metric.SleuthMetricProperties",
+        "resource": "class path resource [org/springframework/cloud/sleuth/metric/TraceMetricsAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.cloud.stream.config.codec.kryo.KryoCodecAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.codec.kryo.KryoCodecAutoConfiguration$$EnhancerBySpringCGLIB$$de669ba4",
+        "resource": "null",
+        "dependencies": [
+          "spring.cloud.codec.kryo-org.springframework.cloud.stream.config.codec.kryo.KryoCodecProperties"
+        ]
+      },
+      {
+        "bean": "codec",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.codec.kryo.PojoCodec",
+        "resource": "class path resource [org/springframework/cloud/stream/config/codec/kryo/KryoCodecAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "fileRegistrar",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.codec.kryo.FileKryoRegistrar",
+        "resource": "class path resource [org/springframework/cloud/stream/config/codec/kryo/KryoCodecAutoConfiguration.class]",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.cloud.codec.kryo-org.springframework.cloud.stream.config.codec.kryo.KryoCodecProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.stream.config.codec.kryo.KryoCodecProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.integration.channel.interceptor.GlobalChannelInterceptorWrapper#0",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.channel.interceptor.GlobalChannelInterceptorWrapper",
+        "resource": "null",
+        "dependencies": [
+          "traceChannelInterceptor"
+        ]
+      },
+      {
+        "bean": "org.springframework.integration.jmx.config.MBeanExporterHelper",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.jmx.config.MBeanExporterHelper",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "nullChannel",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.channel.NullChannel",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "errorChannel",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.channel.PublishSubscribeChannel",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "_org.springframework.integration.errorLogger.handler",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.handler.LoggingHandler",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "_org.springframework.integration.errorLogger",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.integration.endpoint.EventDrivenConsumer",
+        "resource": "null",
+        "dependencies": [
+          "_org.springframework.integration.errorLogger.handler"
+        ]
+      },
+      {
+        "bean": "taskScheduler",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler$$EnhancerBySpringCGLIB$$b9eacc57",
+        "resource": "null",
+        "dependencies": [
+          "(inner bean)#7d9e8ef7"
+        ]
+      }
+    ]
+  },
+  {
+    "context": "bootstrap:cloud:0",
+    "parent": null,
+    "beans": [
+      {
+        "bean": "propertySourceBootstrapConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration$$EnhancerBySpringCGLIB$$ff316c1f",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "encryptionBootstrapConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.bootstrap.encrypt.EncryptionBootstrapConfiguration$$EnhancerBySpringCGLIB$$5bedaf0f",
+        "resource": "null",
+        "dependencies": [
+          "encrypt-org.springframework.cloud.bootstrap.encrypt.KeyProperties"
+        ]
+      },
+      {
+        "bean": "configurationPropertiesRebinderAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6b9e50b3",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "propertyPlaceholderAutoConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$760f630",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "cloudEnvironmentBootstrapConfiguration",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "io.pivotal.spring.cloud.config.java.CloudEnvironmentBootstrapConfiguration$$EnhancerBySpringCGLIB$$ee259372",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.core.type.classreading.CachingMetadataReaderFactory",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "spring.cloud.config-org.springframework.cloud.bootstrap.config.PropertySourceBootstrapProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.bootstrap.config.PropertySourceBootstrapProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor",
+        "resource": "null",
+        "dependencies": [
+          "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store"
+        ]
+      },
+      {
+        "bean": "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.context.properties.ConfigurationBeanFactoryMetaData",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "environmentDecryptApplicationListener",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer",
+        "resource": "org.springframework.cloud.bootstrap.encrypt.EncryptionBootstrapConfiguration",
+        "dependencies": []
+      },
+      {
+        "bean": "encrypt-org.springframework.cloud.bootstrap.encrypt.KeyProperties",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.bootstrap.encrypt.KeyProperties",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "org.springframework.boot.autoconfigure.condition.BeanTypeRegistry",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.boot.autoconfigure.condition.BeanTypeRegistry",
+        "resource": "null",
+        "dependencies": []
+      },
+      {
+        "bean": "configurationPropertiesBeans",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.properties.ConfigurationPropertiesBeans",
+        "resource": "org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration",
+        "dependencies": []
+      },
+      {
+        "bean": "configurationPropertiesRebinder",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder",
+        "resource": "org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration",
+        "dependencies": [
+          "configurationPropertiesBeans",
+          "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        ]
+      },
+      {
+        "bean": "propertySourcesPlaceholderConfigurer",
+        "aliases": [],
+        "scope": "singleton",
+        "type": "org.springframework.context.support.PropertySourcesPlaceholderConfigurer",
+        "resource": "org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration",
+        "dependencies": []
+      }
+    ]
+  }
+]
