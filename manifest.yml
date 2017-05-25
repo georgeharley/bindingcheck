@@ -3,7 +3,7 @@ applications:
 - name: bindingcheck
   path: build/libs/bindingcheck-0.0.1-SNAPSHOT.jar
   services:
-#  - circuit
+  - circuit
   - rabbit
 
 env:

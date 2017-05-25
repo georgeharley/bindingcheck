@@ -31,10 +31,15 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
     compile "org.springframework.boot:spring-boot-starter-actuator"
     compile('org.springframework.cloud:spring-cloud-starter-stream-rabbit')
-//    compile('io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker')
+    compile('io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker')
     compile ("org.springframework.cloud:spring-cloud-starter-sleuth")
-//    compile ("org.springframework.cloud:spring-cloud-sleuth-stream")
-    compile ("org.springframework.cloud:spring-cloud-sleuth-zipkin-stream")
+
+    // Ben, The following dependency is what causes the startup problem to occur in PCF.
+    // To "fix" things either comment out the below line -> rebuild -> cf push and the app should start
+    // OR
+    // Leave the line below as is but change the springCloudVersion line above to 'Dalston.SR1' -> rebuild -> cf push etc.
+    compile ("org.springframework.cloud:spring-cloud-sleuth-stream")
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
